@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>My LMS - ICT</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Acme">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aguafina+Script">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alfa+Slab+One">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/styles.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body style="font-family: Acme, sans-serif; width: 100%;background-color: #000000;background-image: url(./assets/img/bg\ img\ dark.jpg);background-repeat:no-repeat;background-position: center;background-size:cover;">
+    <nav class="navbar navbar-light navbar-expand-md" style="background: rgb(0,151,136);font-family: Acme, sans-serif;">
+        <div class="container-fluid"><a class="navbar-brand" href="../index.html">My LMS&nbsp;<img src="assets/img/icons8-precision-64.png" style="width: 25px;"></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            
+        <div
+                class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link active" href="../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About US</a></li>
+                </ul>
+        </div>
+        </div>
+    </nav>
+    <div style="background: #fff175;padding-top: 4px;"></div>
+    <meta http-equiv="X-Frame-Options" content="deny">
+    <div style="height: auto; text-align: center;margin-top: 25vh;">
+                <h1 style="font-size: 60px; color: rgb(250,0,255);">Entering TecLMS Educational Portal</h1>
+                <p style="font-size: 30px; color: rgb(6,214,223);">
+                    Redirecting to TecLMS ...<br>
+					<span id="countdown">1</span> seconds </p>
+                <button id="redirect" onclick=""></button>
+                  <!-- JavaScript part -->
+                  <script type="text/javascript">
+                      
+                      // Total seconds to wait
+                      var seconds = 1;
+                      
+                      function countdown() {
+                          seconds = seconds - 1;
+                          if (seconds < 0) {
+                              // Chnage your redirection link here
+                              window.location = "https://teclms.netlify.app/";
+                              
+                          } else {
+                              // Update remaining seconds
+                              document.getElementById("countdown").innerHTML = seconds;
+                              // Count down using javascript
+                              window.setTimeout("countdown()", 1000);
+                          }
+                      }
+                      
+                      // Run countdown function
+                      countdown();
+                      
+                  </script>
+            </div>
+
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.min.js"></script>
+</body>
+
+</html>
