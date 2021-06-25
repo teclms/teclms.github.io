@@ -38,7 +38,7 @@
                 <p style="font-size: 30px; color: rgb(6,214,223);">
                     Redirecting to TecLMS ...<br>
 					<span id="countdown">1</span> seconds </p>
-                <button id="redirect" onclick=""></button>
+                <button id="redirect" style="display:none" onclick="https://teclms.netlify.app">TecLMS</button>
                   <!-- JavaScript part -->
                   <script type="text/javascript">
                       
@@ -50,6 +50,7 @@
                           if (seconds < 0) {
                               // Chnage your redirection link here
                               window.location = "https://teclms.netlify.app/";
+			      document.getElementById("redirect").style.display = "";
                               
                           } else {
                               // Update remaining seconds
