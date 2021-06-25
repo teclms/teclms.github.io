@@ -15,6 +15,40 @@
     <link rel="stylesheet" href="assets/css/styles.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<style>
+    #btnsite {
+            width: 260px;
+            height: 43px;
+            text-align: center;
+            border-style: none;
+            margin-left: 18px;
+            margin-right: 18px;
+            background: #555555;
+            margin-top: 20px;
+            color: #ffffff;
+            font-size: 25px;
+            transition-duration: 0.6s;
+            border-color: #0062cc;
+            text-decoration: none;
+            text-align: center !important;
+            display: inline-block;
+            font-weight: 400;
+            vertical-align: middle;
+            user-select: none;
+            padding: .375rem .75rem;
+            line-height: 1.5;
+            border-radius: .25rem;
+            align-items: flex-start;
+            overflow: visible;
+            font-family: inherit;
+
+        }
+
+        #btnsite:hover {
+            color: #ffffff;
+            background: #0d887c;
+        }
+    </style>
 </head>
 
 <body style="font-family: Acme, sans-serif; width: 100%;background-color: #000000;background-image: url(./assets/img/bg\ img\ dark.jpg);background-repeat:no-repeat;background-position: center;background-size:cover;">
@@ -38,7 +72,7 @@
                 <p style="font-size: 30px; color: rgb(6,214,223);">
                     Redirecting to TecLMS ...<br>
 					<span id="countdown">1</span> seconds </p>
-                <button id="redirect" style="display:none" onclick="https://teclms.netlify.app">TecLMS</button>
+                <button id="btnsite" style="display:none" onclick="gotosite()">TecLMS</button>
                   <!-- JavaScript part -->
                   <script type="text/javascript">
                       
@@ -50,7 +84,8 @@
                           if (seconds < 0) {
                               // Chnage your redirection link here
                               window.location = "https://teclms.netlify.app/";
-			      document.getElementById("redirect").style.display = "";
+			      document.getElementById("btnsite").style.display = "";
+		
                               
                           } else {
                               // Update remaining seconds
@@ -62,6 +97,10 @@
                       
                       // Run countdown function
                       countdown();
+			  
+		      function gotosite() {
+                      window.location = "https://teclms.netlify.app/";
+                      }
                       
                   </script>
             </div>
