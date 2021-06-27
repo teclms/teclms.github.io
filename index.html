@@ -69,27 +69,30 @@
     <meta http-equiv="X-Frame-Options" content="deny">
     <div style="height: auto; text-align: center;margin-top: 25vh;">
                 <h1 style="font-size: 60px; color: rgb(250,0,255);">Entering TecLMS Educational Portal</h1>
-                <p style="font-size: 30px; color: rgb(6,214,223);">
-                    Redirecting to netlify.app ...<br>
-					<span id="countdown">1</span> seconds </p>
-                <button id="btnsite" style="display:none" onclick="window.location = 'https://teclms.netlify.app/'">TecLMS</button>
+				<p id="loadtxt"style="font-size: 30px; color: rgb(6,214,223);">
+                    Redirecting to teclms.netlify.app </p>
+                
+				<div id = "hidecont" style="display:none;">
+				<p style ="margin-top:5px;font-size: 20px;color:gray;">if not,</p>
+                <button id="btnsite" style ="margin-top:-12px" onclick="window.location = 'https://teclms.netlify.app/'">➹ Click ME ➹</button></div>
                   <!-- JavaScript part -->
                   <script type="text/javascript">
                       
                       // Total seconds to wait
-                      var seconds = 1;
+                      var seconds = 4;
                       
                       function countdown() {
                           seconds = seconds - 1;
                           if (seconds < 0) {
                               // Chnage your redirection link here
                               window.location = "https://teclms.netlify.app/";
-			      document.getElementById("btnsite").style.display = "";
-		
-                              
+								document.getElementById("hidecont").style.display = "";
+								document.getElementById("redirecttxt").style.display = "none";
+						
                           } else {
                               // Update remaining seconds
-                              document.getElementById("countdown").innerHTML = seconds;
+                              //document.getElementById("countdown").innerHTML = seconds;
+							  document.getElementById("loadtxt").innerHTML = document.getElementById("loadtxt").innerHTML + " .";
                               // Count down using javascript
                               window.setTimeout("countdown()", 1000);
                           }
@@ -97,11 +100,6 @@
                       
                       // Run countdown function
                       countdown();
-			  
-		      function gotosite() {
-                      window.location = "https://teclms.netlify.app/";
-                      }
-                      
                   </script>
             </div>
 
