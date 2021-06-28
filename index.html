@@ -87,14 +87,14 @@
                               // Chnage your redirection link here
                               window.location = "https://teclms.netlify.app/";
 								document.getElementById("hidecont").style.display = "";
-								document.getElementById("redirecttxt").style.display = "none";
+								document.getElementById("loadtxt").style.display = "none";
 						
                           } else {
                               // Update remaining seconds
                               //document.getElementById("countdown").innerHTML = seconds;
-							  document.getElementById("loadtxt").innerHTML = document.getElementById("loadtxt").innerHTML + " .";
+				document.getElementById("loadtxt").innerHTML = document.getElementById("loadtxt").innerHTML + " .";
                               // Count down using javascript
-                              window.setTimeout("countdown()", 1000);
+                              	window.setTimeout("countdown()", 1000);
                           }
                       }
                       
