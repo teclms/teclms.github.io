@@ -1,11 +1,98 @@
+<!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>My LMS : All Educational Resources in One Place</title>
+    <title>TecLMS : Home</title>
     <link rel="icon" href="assets/img/favicon.ico">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Acme">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aguafina+Script">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alfa+Slab+One">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/styles.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<style>
+    #btnsite {
+            width: 260px;
+            height: 43px;
+            text-align: center;
+            border-style: none;
+            margin-left: 18px;
+            margin-right: 18px;
+            background: #555555;
+            margin-top: 20px;
+            color: #ffffff;
+            font-size: 25px;
+            transition-duration: 0.6s;
+            border-color: #0062cc;
+            text-decoration: none;
+            text-align: center !important;
+            display: inline-block;
+            font-weight: 400;
+            vertical-align: middle;
+            user-select: none;
+            padding: .375rem .75rem;
+            line-height: 1.5;
+            border-radius: .25rem;
+            align-items: flex-start;
+            overflow: visible;
+            font-family: inherit;
+
+        }
+
+        #btnsite:hover {
+            color: #ffffff;
+            background: #0d887c;
+        }
+    </style>
 </head>
-<body style="background-color:black;">
-<iframe name="report" frameborder="0" src="https://teclms.netlify.app/" style="background-color:black; width:100%; height:100vh; position: absolute; top: 0; right: 0; bottom: 0: left: 0;"></body></iframe>
+
+<body style="font-family: Acme, sans-serif; width: 100%;background-color: #000000;background-image: url(./assets/img/bg\ img\ dark.jpg);background-repeat:no-repeat;background-position: center;background-size:cover;">
+    <meta http-equiv="X-Frame-Options" content="deny">
+    <div style="height: auto; text-align: center;margin-top: 30vh;">
+                <h1 style="font-size: 60px; color: rgb(250,0,255);">Entering TecLMS Educational Portal</h1>
+				<p id="loadtxt"style="font-size: 30px; color: rgb(6,214,223);">
+                    Redirecting to teclms.netlify.app </p>
+                
+				<div id = "hidecont" style="display:none;">
+				<p style ="margin-top:5px;font-size: 20px;color:gray;">if not,</p>
+                <button id="btnsite" style ="margin-top:-12px" onclick="window.location = 'https://teclms.netlify.app/'">➹ Click ME ➹</button></div>
+                  <!-- JavaScript part -->
+                  <script type="text/javascript">
+                      
+                      // Total seconds to wait
+                      var seconds = 4;
+                      
+                      function countdown() {
+                          seconds = seconds - 1;
+                          if (seconds < 0) {
+                              // Chnage your redirection link here
+                              window.location = "https://teclms.netlify.app/";
+								document.getElementById("hidecont").style.display = "";
+								document.getElementById("redirecttxt").style.display = "none";
+						
+                          } else {
+                              // Update remaining seconds
+                              //document.getElementById("countdown").innerHTML = seconds;
+							  document.getElementById("loadtxt").innerHTML = document.getElementById("loadtxt").innerHTML + " .";
+                              // Count down using javascript
+                              window.setTimeout("countdown()", 1000);
+                          }
+                      }
+                      
+                      // Run countdown function
+                      countdown();
+                  </script>
+            </div>
+
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.min.js"></script>
 </body>
+
 </html>
