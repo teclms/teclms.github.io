@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+        @media screen and (max-width:700px) {
+            .player {
+                width: 100%;
+                height: 240px;
+                /* padding-left: 0px; */
+            }
+
+            .main {
+                width: 10px;
+                height: auto;
+
+            }
+            .sidebar {
+                width: 100%;
+                margin-top: 500px;
+            }
+
+        }
+
+
+        .evelink {
+            position: relative;
+            color: #00b3ff;
+            font-weight:bolder;
+            position: relative;
+            text-decoration: none;
+        }
+        a{
+            position: relative;
+            color: #00f7ff;
+            font-weight:bolder;
+            position: relative;
+            text-decoration: none;
+        }
+        a:hover{
+            color: #00f7ff;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        .evelink{
+            position: relative;
+            color: #00f7ff;
+            font-weight:bolder;
+            position: relative;
+            text-decoration: none;
+        }
+        .evelink::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 0;
+            height: 2px;
+            background-color: currentColor;
+            transition: width 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+            text-decoration: none;
+        }
+
+        @media (hover: hover) and (pointer: fine) {
+            .evelink:hover::before {
+                left: 0;
+                right: auto;
+                width: 100%;
+                background-color: currentColor;
+                text-decoration:none;
+                color: currentColor;
+            }
+        }
+.navbar {
+    z-index: 11;
+}
+
+
+        .main {
+            width: 70%;
+            margin-top: 5px;
+            transition: margin-right .5s;
+            height: 85vh;
+        }
+        .mainCenter {
+            margin-left: auto;
+            margin-right: auto;
+            display:block;
+        }
+        .mySidebar {
+            height: 100%;
+            width: 22%;
+            position: absolute;
+            z-index: 1;
+            top: 0;
+            right: 0;
+            overflow-x: hidden;
+            transition: 0.5s;
+            /* overflow-y: visible; */
+            padding-top: 65px;
+        }
+         
+        .openbtn {
+            transition: 0.5s;
+            z-index: 2;
+            font-size: 30px;
+            width: 50px;
+            position: absolute;
+            cursor: pointer;
+            background-color: rgb(23, 163, 149);
+            color: #dfdcc4;
+            border: none;
+            right: 0;
+            margin-right: 22%;
+            margin-top: 1vh;
+          }
+          
+          .openbtn:hover {
+            background-color: #444;
+          }
+          .goright {
+            margin-right: 0.5%;
+            margin-top: 1vh;
+          }
+
+
+        .link {
+            width: 20%;
+            height: auto;
+            margin-right: 2px;    
+
+        }
+
+        iframe {
+            border-radius: 5px;
+        }
+
+
+
+
+
+
+        /* width */
+        ::-webkit-scrollbar {
+            width: 5px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            background: #00000000;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: rgb(54, 54, 54);
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgb(97, 97, 97);
+        }
