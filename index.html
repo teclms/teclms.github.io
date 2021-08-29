@@ -138,8 +138,10 @@
                       function countdown() {
                           seconds = seconds - 1;
                           if (seconds < 0) {
-                              // Chnage your redirection link here
-                              window.location = "https://teclms.pythonanywhere.com/";
+                              // if active
+                              // window.location = "https://teclms.pythonanywhere.com/";
+                              // if maintenance mode
+                              window.location = "https://teclms.github.io/maintenance/";
 								
 						
                           } else {
