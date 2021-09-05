@@ -1,0 +1,266 @@
+body {
+  margin: 0px;
+  border: 0;
+  background-color: #12181b;
+  color: white;
+  /* font-family: "Courier New", Courier, monospace; */
+  font-family: "Sofia Pro", sans-serif;
+  letter-spacing: 0.7px;
+  overflow-x: hidden;
+}
+
+.myNavBar {
+  /* background-color: #202020; */
+  background-color: #2a2e35;
+  height: 56px;
+  width: 100%;
+  display: none;
+}
+.brand {
+  font-family: Acme, sans-serif;
+  padding: 13px;
+  padding-left: 15px;
+  
+}
+.brand h1 {
+  margin: 0px;
+}
+.menuButtons {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  padding: 3px;
+  background-color: #575757;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.featurebutton {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  margin: 10px;
+  right: 0;
+  padding: 3px;
+  background-color: #575757;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+.featurebutton:hover {
+  background-color: #9c9c9c;
+}
+
+.leftPanel {
+  float: left;
+  width: 70%;
+
+  height: 100vh;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; */
+}
+
+.rightPanel {
+  background-color: #2a2e35;
+  float: right;
+  width: 30%;
+  height: 100vh;
+}
+
+.youtubeVideo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  /* height: 90%; */
+  /* aspect-ratio: 16 / 9; */
+  border: none;
+}
+
+.youtubeiframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: none;
+}
+.vdoDesc {
+  width: 100%;
+  /* bottom: 0; */
+  /* position:absolute; */
+  margin: 0px;
+  margin-top: 10px;
+}
+.vdoDesc h1 {
+  font-size: 20px;
+  margin: 2px 15px;
+}
+.vdoDesc p {
+  margin: 2px 18px;
+  font-size: 13px;
+}
+
+.playlistDesc {
+}
+
+.playlistDesc h1 {
+  margin-top: 5px;
+  align-items: center;
+  margin-bottom: 0px;
+}
+.playlistDesc div p {
+  font-size: 10px;
+  margin-top: -1px;
+  margin-left: 5px;
+}
+
+.playlist {
+  height: 90vh;
+  width: 100%;
+  overflow-y: auto;
+  border-top: 1px solid rgb(104, 104, 104);
+}
+
+table {
+  width: 100%;
+}
+
+.playlistItem {
+  height: 60px;
+}
+
+.onevideoitem {
+  border-bottom: 1px solid rgb(104, 104, 104);
+  display: flex;
+  transition: background-color 0.7s;
+}
+.onevideoitem:hover {
+  background-color: rgb(104, 104, 104);
+}
+
+.tumb-container img {
+  border: 2px solid rgb(53, 53, 53);
+  height: 55px;
+}
+
+.vdodetail {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.duration {
+  position: relative;
+  /* z-index: 10; */
+  font-size: 12px;
+  margin-left: 52px;
+  margin-top: -20px;
+  color: white;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.418);
+  /* padding: 1px; */
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #00000000;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(185, 185, 185);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(97, 97, 97);
+}
+
+section {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.lessonlist-container {
+  /* background-color: rgb(148, 144, 138); */
+  width: 90%;
+  height: auto;
+  margin: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.item-card {
+  margin: 20px;
+  background-color: #2a2e35;
+  width: 350px;
+  height: 300px;
+  border-radius: 5px;
+}
+
+.item-card-title {
+  width: 100%;
+  border-top-left-radius:5px ;
+  border-top-right-radius: 5px;
+  height: 50px;
+  font-size: 30px;
+  color: #b2becd;
+  font-family: Acme, sans-serif;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  background-color: rgb(48, 48, 48);
+  border-bottom: 1px solid rgb(80, 80, 80);
+
+}
+.item-card-body {
+  width: 100%;
+  height: 250px;
+  overflow-x: scroll;
+  background-color: rgba(77, 76, 76, 0);
+}
+
+.item {
+  width: 100%;
+  height: 40px;
+  border-bottom: 1px solid rgb(80, 80, 80);
+  font-size: 15px;
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.item-icon {
+  margin: 10px;
+}
+
+.item-details {
+  width: 85%;
+  font-weight: bold;
+  position:relative;
+    /* padding:7px; */
+    /* text-align:justify; */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
